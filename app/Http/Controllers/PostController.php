@@ -39,7 +39,7 @@ class PostController extends Controller
     {
         $input_post = $request['post'];
         $post->fill($input_post)->save();
-
+        
         return redirect('/posts/' . $post->id);
     }
 }
